@@ -1,0 +1,73 @@
+﻿<Window x:Class="Kosci.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gra w kości"
+        Width="800"
+        Height="300"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#ED27C121">
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <Image x:Name="Kosc1"
+                       Width="80"
+                       Height="80"
+                       Margin="10"
+                       Source="/Images/kosc0.png"
+                       MouseLeftButtonDown="Kosc_Click"/>
+
+                <Image x:Name="Kosc2"
+                       Width="80"
+                       Height="80"
+                       Margin="10"
+                       Source="/Images/kosc0.png"
+                       MouseLeftButtonDown="Kosc_Click"/>
+
+                <Image x:Name="Kosc3"
+                       Width="80"
+                       Height="80"
+                       Margin="10"
+                       Source="/Images/kosc0.png"
+                       MouseLeftButtonDown="Kosc_Click"/>
+
+                <Image x:Name="Kosc4"
+                       Width="80"
+                       Height="80"
+                       Margin="10"
+                       Source="/Images/kosc0.png"
+                       MouseLeftButtonDown="Kosc_Click"/>
+
+                <Image x:Name="Kosc5"
+                       Width="80"
+                       Height="80"
+                       Margin="10"
+                       Source="/Images/kosc0.png"
+                       MouseLeftButtonDown="Kosc_Click"/>
+
+            </StackPanel>
+
+            <Button x:Name="PrzyciskRzut"
+                    Content="RZUT"
+                    Width="120"
+                    Height="45"
+                    Margin="10"
+                    HorizontalAlignment="Center"
+                    Background="#ED275021"
+                    Click="PrzyciskRzut_Click"/>
+
+            <TextBlock x:Name="Wynik"
+                       Text="0"
+                       FontSize="40"
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>
